@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>숨어있는 강아지 찾기</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<script src="../javascript/main.js"></script>
+<body>
+	<header class="title"><h1>숨어있는 강아지 찾기</h1>
+	<hr>
+	</header>
+	<section class="main">
+		<table class="table">
+			<tbody>
+				<div style="left: 45%; top:30%;bottom: 50%; font-size: 400%; font-weight: bold; position: absolute;">
+					<h1 style="color:palevioletred; text-shadow: 0 0 2px black;"id="GameOver"></h1>
+				</div>
+				<tr>
+					<td><img id="0" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="1" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="2" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="3" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="4" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="5" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="6" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="7" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+				</tr>
+				<tr>
+					<td><img id="8" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="9" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="10" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="11" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="12" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="13" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="14" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="15" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+				</tr>
+				<tr>
+					<td><img id="16" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="17" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="18" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="19" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="20" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="21" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="22" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+					<td><img id="23" src="../img/img1.gif" onclick="isAnswer(this.id)"></td>
+				</tr>
+			</tbody>
+			
+			<script>
+				showDogs();
+			</script>
+		</table>
+
+	</section>
+	<nav class="info">
+		<button class="button" onclick="location.href='find-hidden-dogs.html'">다시 시작</button>
+		<span>남은 수 : 8</span>
+		<span>실패 수 : 0</span>
+		<span id="score">점수 : 500</span>
+		<span id="num"></span>
+		<script>
+			CountDown();
+		</script>
+		<span id="order">숨은 그림을 잘 보세요.</span>
+	</nav>
+</body>
+</html>
